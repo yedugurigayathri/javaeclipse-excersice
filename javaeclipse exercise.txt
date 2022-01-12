@@ -1,0 +1,317 @@
+package javatraining1;
+
+public class array {
+	public static void main(String[] args) {
+		int arr[]= {1,2,3,4,5,6};
+		int sum=0;
+		int i;
+		for(i=0;i<arr.length;i++) {
+			sum=sum+arr[i];
+		}System.out.println("Sum of array of elements is:"+ sum);
+		
+	}
+
+}
+ackage javatraining1;
+
+public class cube {
+	public static void main(String[]args) {
+		int num=2;
+		System.out.println("cube of given number is:"+(num*num*num));
+	}
+
+}
+package javatraining1;
+
+public class Employe {
+	
+	
+
+		public int empid;
+
+		public String empname;
+
+		public int empsal;
+
+		private int salcal;
+
+		public void display() {
+
+			System.out.println(empid);
+
+			System.out.println(empname);
+
+			System.out.println(empsal);
+
+		}
+
+		public void salcal() {
+
+			salcal= empsal-2000;
+
+			System.out.println(salcal);
+
+		}
+
+		public class manager extends Employe{
+
+			public void salcal() {
+
+				salcal= empsal-2000;
+
+				System.out.println(salcal);
+
+			}
+
+		}
+
+		public class developer extends Employe{
+
+			public void salcal() {
+
+				salcal= empsal-2000;
+
+				System.out.println(salcal);
+
+			}
+
+		}
+
+		public class tester extends Employe{
+
+			public void salcal() {
+
+				salcal= empsal-2000;
+
+				System.out.println(salcal);
+
+			}
+
+		}
+
+		public static void main(String[] args) {
+
+			 Employe emp = new Employe();
+
+			 tester tes=emp.new tester();
+
+			 emp.empid=1231;
+
+			 emp.empname="gayi";
+
+			 emp.empsal=20000;
+
+			 emp.salcal();
+
+			 emp.display();
+
+		}
+
+	}
+
+
+
+
+package javatraining1;
+
+public class Iph {
+	public static void main(String[] args) {
+		Iphone Ip=new Iphone();
+		Ip.memorysize=32;
+		Ip.price();
+	}
+}
+
+
+package javatraining1;
+
+public class Iphone {
+	int memorysize;
+	void price() {
+		if(memorysize==16) {
+			System.out.println("Price is 10000");
+		}
+		else if (memorysize==32) {
+			System.out.println("Price is 20000");
+		}
+		else if (memorysize==64) {
+			System.out.println("Price is 30000");
+		}
+	}
+public static void main(String[] args) {
+	Iphone Ip=new Iphone();
+	Ip.memorysize=32;
+	Ip.price();
+}
+}
+
+
+package javatraining1;
+
+public class Naturalnum {
+	public static void main(String[] args) {
+		int i,n=10;
+		for(i=1;i<=n;i++) {
+			System.out.println(i);
+			
+		}
+	}
+
+}
+package javatraining1;
+
+public class practice {
+	static int biggestOfThree(int a, int b, int c)
+	{
+		return c > (a > b ? a : b) ? c : ((a > b) ? a : b);
+	}
+
+
+	public static void main(String[] args) {
+		int a,b,c;
+		int largest;
+		{
+		a = 12;
+		b = 25;
+		c = 89;
+		largest = biggestOfThree(a,b,c);
+	System.out.println(largest+"is the largest number.");
+		
+	}
+
+}}
+package javatraining1;
+
+public class pro {
+	static float calculate_gst(float p_proorgcost, float p_proprice) {
+		return(((p_proprice-p_proorgcost)*100)/p_proorgcost);
+	}
+		
+	
+	public static void main(String args[]) {
+		product p=new product();
+		p.proid=8;
+		p.proname="ice";
+		p.proprice=100;
+		p.proorgcost=95;
+		System.out.println(p.proid);
+		System.out.println(p.proname);
+		System.out.println(p.proprice);
+		System.out.println("gst="+calculate_gst(p.proorgcost,p.proprice) +"%");
+		System.out.println(calculate_gst(p.proorgcost,p.proprice)+p.proprice);
+		}}
+package javatraining1;
+
+public class product {
+	public int proid;
+	public String proname;
+	public int proprice;
+	public int proorgcost;
+
+}
+package javatraining1;
+
+public class Rectangle {
+
+	
+	
+	public	double width=2;
+	public double height=2;
+		
+	}
+
+
+package javatraining1;
+
+public class Reversearray {
+
+	public static void main(String[] args) {
+		int [] arr = new int [] {1, 2, 3, 4, 5};  
+		       System.out.println("Original array: ");  
+		       for (int i = 0; i < arr.length; i++) {  
+		           System.out.print(arr[i] + " ");  
+		       }  
+		       System.out.println();  
+		       System.out.println("Array in reverse order: ");  
+		       //Loop through the array in reverse order  
+		       for (int i = arr.length-1; i >= 0; i--) {  
+		           System.out.print(arr[i] + " ");
+		       }
+		
+
+}}
+package javatraining1;
+
+public class Shape {
+
+	public static void main(String[] args) {
+		
+		int width=5;
+		int height=10;
+		
+		int area=width*height;
+		System.out.println("Area of rectangle="+area);
+		int s=13;
+		
+		int area_square=s*s;
+		System.out.println("Area of the square="+area_square);
+		 float b=4,h =13,area1 ;  
+         area1 = ( b*h) / 2 ;  
+         System.out.println("Area of Triangle is: "+area1);
+		
+		// TODO Auto-generated method stub
+
+	}}
+package javatraining1;
+
+public class Specificvalue {
+	public static boolean contains(int[] arr, int item) {
+	     for (int num : arr) {
+	        if (item == num) {
+	           return true;
+	        }
+	     }
+	     return false;
+	  } public static void main(String[] args) {
+	         int[] my_array1 = {1,2,3,4,5,6,7,8,9,10};
+	         System.out.println(contains(my_array1, 10));
+	         System.out.println(contains(my_array1, 20));
+	      }
+	    }
+
+package javatraining1;
+
+public class Square {
+	public int length;
+	public int width;
+	public int height;
+
+}
+package javatraining1;
+
+public class stu {
+	public static void main(String args[]) {
+		student s1=new student();
+		s1.stdid=100;
+		s1.stdname="gayi";
+		s1.stdclass=5;
+		System.out.println(s1.stdid);
+		System.out.println(s1.stdname);
+		System.out.println(s1.stdclass);
+	}
+
+}
+package javatraining1;
+
+public class student {
+	public int stdid;
+	public String stdname;
+	public int stdclass;
+}package javatraining1;
+
+public class Triangle {
+	public int height;
+	public int width;
+	public int length;
+
+}
